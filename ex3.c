@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-int main ()
+void main ()
 {
-    int width = 0;
-    int height = 0;
+    int red = 1, blue = 2;
+    int yellow = 0;
 
-    printf("가로 길이를 입력하세요 : ");
-    scanf("%d", &width);
+    printf("before \n");
+    printf("red = %d, blue = %d\n", red, blue);
 
-    printf("세로 길이를 입력하세요 : ");
-    scanf("%d", &height);
+    yellow = red;
+    red = blue;
+    blue = yellow;
 
-    printf("직사각형의 넓이는 %d입니다. \n", width*height);
-    
-    return 0;
+    printf("after \n");
+    printf("red = %d, blue = %d \n", red, blue);
 }

@@ -1,17 +1,13 @@
 #include <stdio.h>
-#define PI 3.14
 
 int main ()
 {
-    int radius = 0;
-    double area = 0.0l;
+    int birthday = 0;
 
-    printf("반지름을 입력하세요 : ");
-    scanf("%d", &radius);
+    printf("생년월일을 입력하세요 : ");
+    scanf("%d", &birthday);
 
-    area = radius*radius*PI;
-    printf("원의 넓이는 %lf입니다. \n", area);
+    printf("생년월일 : %d \n", birthday);
 
     return 0;
-
 }

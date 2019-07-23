@@ -2,14 +2,18 @@
 
 int main ()
 {
-    printf("************************************\n");
-    printf("***********    리포트    ***********\n");
-    printf("************************************\n");
-    printf("\tㅡㅡㅡㅡㅡㅡ\n");
-    printf("\t|%sᅵ\n", "컴퓨터학과");
-    printf("\tㅡㅡㅡㅡㅡㅡ\n");
-    printf("%d\n", 20070001);
-    printf("%s\n", "홍길동");
+    float base, height = 0.0f;
+    float area = 0.0f;
+    
+    printf("삼각형의 밑변: ");
+    scanf("%f", &base);
+
+    printf("삼각형의 높이: ");
+    scanf("%f", &height);
+
+    area = 0.5 * base * height;
+
+    printf("삼각형의 넓이: %f\n", area);
 
     return 0;
 }
